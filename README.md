@@ -29,7 +29,7 @@ It is designed to demonstrate WebRTC video calls between android devices and des
 
 ## How To
 
-ProjectRTC should be on and running, and it must be somewhere that your android can access. Modify the host to the server IP.
+ProjectRTC should be on and running, and it must be somewhere that your android can access. Modify the host to the server IP.(command: ifconfig | grep inet)
 
 Your stream should appear as "android_test" in ProjectRTC, so you can also use the call feature there to communicate with pc.
 
