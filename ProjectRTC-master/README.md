@@ -13,7 +13,7 @@ The client is built with [angularjs](https://angularjs.org/).
 
 It requires [node.js](http://nodejs.org/download/)
 
-* git clone https://github.com/pchab/ProjectRTC.git
+* git clone https://github.com/YueSun233133/Sharing-Android-Screen-for-Customer-Service.git
 * cd ProjectRTC/
 * npm install
 * npm start
