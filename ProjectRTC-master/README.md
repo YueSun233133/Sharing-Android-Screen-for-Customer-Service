@@ -4,7 +4,7 @@
 
 - Node.js server
 - Desktop client
-- [Android client](https://github.com/pchab/AndroidRTC)
+- Android client
 
 The signaling part is done with [socket.io](socket.io).
 The client is built with [angularjs](https://angularjs.org/).
@@ -20,7 +20,3 @@ It requires [node.js](http://nodejs.org/download/)
 
 The server will run on port 3000.
 You can test it in the (Chrome or Firefox) browser at localhost:3000.
-
-## Author
-
-- [Pierre Chabardes](mailto:pierre@chabardes.net)
