@@ -20,6 +20,10 @@
 - Private DNS : ip-172-31-29-61.us-west-2.compute.internal
 - Private IPs : 172.31.29.61
 
+## Connect with AWS (for Mac)
+
+- Please check http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+
 ## Change all default IP addresses in our app into EC2 public DNS to accomplish using server in AWS.
 
 ## How to
