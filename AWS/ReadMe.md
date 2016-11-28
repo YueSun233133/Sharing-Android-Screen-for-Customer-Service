@@ -32,29 +32,31 @@
 
   When you finally access into AWS remote terminal, first check versions of node.js and npm using :
 
-  '''
+  ```
   node -v
   npm -v
-  '''
+  ```
 
   Then start Mongo DB using :
 
-  '''
+  ```
   sudo service mongod start
-  '''
+  ```
 
   Remember to create database :
-  '''
+  ```
     mongo
   > use node-login
   > db
   > db.getCollection('users').createIndex({"email":1}, {unique:true})
-  '''
+  ```
 
   Don't forget to use WinSCP to transfer necessary files to AWS.
 
   Go into "android-login-registration-authentication-server/node-login" and "ProjectRTC-master" and run servers :
-  * node app.js
+  ```
+  node app.js
+  ```
 
   Finally, you can run our app!
 
