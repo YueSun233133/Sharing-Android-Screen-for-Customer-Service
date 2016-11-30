@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidRTC-android-studio.iml" filepath="$PROJECT_DIR$/AndroidRTC-android-studio.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginapp/loginapp.iml" filepath="$PROJECT_DIR$/loginapp/loginapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/webrtc-client/webrtc-client.iml" filepath="$PROJECT_DIR$/webrtc-client/webrtc-client.iml" />
     </modules>
   </component>
