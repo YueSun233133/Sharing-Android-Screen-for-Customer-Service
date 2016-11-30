@@ -88,7 +88,7 @@ public class ChangePasswordDialog extends DialogFragment {
         mTiOldPassword = (TextInputLayout) v.findViewById(R.id.ti_old_password);
         mTiNewPassword = (TextInputLayout) v.findViewById(R.id.ti_new_password);
         mTvMessage = (TextView) v.findViewById(R.id.tv_message);
-        mBtChangePassword = (Button) v.findViewById(R.id.btn_change_password);
+        mBtChangePassword = (Button) v.findViewById(R.id.btn_change_password2);
         mBtCancel = (Button) v.findViewById(R.id.btn_cancel);
         mProgressBar = (ProgressBar) v.findViewById(R.id.progress);
 

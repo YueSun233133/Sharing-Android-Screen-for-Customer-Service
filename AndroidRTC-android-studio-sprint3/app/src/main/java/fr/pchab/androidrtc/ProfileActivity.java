@@ -32,6 +32,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
     private TextView mTvName;
     private TextView mTvEmail;
     private TextView mTvDate;
+    private Button mBtAssistance;
     private Button mBtChangePassword;
     private Button mBtLogout;
 
@@ -59,9 +60,11 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
         mTvEmail = (TextView) findViewById(R.id.tv_email);
         mTvDate = (TextView) findViewById(R.id.tv_date);
         mBtChangePassword = (Button) findViewById(R.id.btn_change_password);
+        mBtAssistance = (Button) findViewById(R.id.btn_Assistance);
         mBtLogout = (Button) findViewById(R.id.btn_logout);
         mProgressbar = (ProgressBar) findViewById(R.id.progress);
 
+        mBtAssistance.setOnClickListener(view -> jmprtc());
         mBtChangePassword.setOnClickListener(view -> showDialog());
         mBtLogout.setOnClickListener(view -> logout());
     }
@@ -74,6 +77,15 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
     }
 
     private void logout() {
+
+        SharedPreferences.Editor editor = mSharedPreferences.edit();
+        editor.putString(Constants.EMAIL,"");
+        editor.putString(Constants.TOKEN,"");
+        editor.apply();
+        finish();
+    }
+
+    private void jmprtc() {
 
         SharedPreferences.Editor editor = mSharedPreferences.edit();
         editor.putString(Constants.EMAIL,"");
