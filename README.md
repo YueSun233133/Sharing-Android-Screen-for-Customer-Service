@@ -28,6 +28,12 @@ An Android client for
 
 It is designed to demonstrate WebRTC video calls between android devices and desktop browsers, but WebRtcClient could be used in other scenarios. 
 
+* git clone https://github.com/YueSun233133/Sharing-Android-Screen-for-Customer-Service.git
+* open exist project in Android Studio Sharing-Android-Screen-for-Customer-Service/AndroidRTC-android-studio-sprint3/
+* change ../app/res/values/strings.xml "<string name="host">YOUR IP ADDRESS</string>"
+* change ../app/java/fr.pchab.androidrtc/utils/Constant, public static final String BASE_URL = "http://YOUR_IP_ADDRESS(10.0.2.2):8080/api/v1/" (10.0.2.2 for virtual device, YOUR_IP_ADDRESS for real Android Device)
+  
+
 ## How To
 
 ProjectRTC should be on and running, and it must be somewhere that your android can access. Modify the host to the server IP.(command: ifconfig | grep inet)
