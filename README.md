@@ -1,5 +1,16 @@
 Sharing Android Screen for Customer Service
 
+
+## Instruction(Please follow this instruction to implement this app)
+
+* git clone https://github.com/YueSun233133/Sharing-Android-Screen-for-Customer-Service.git
+* Open an existing Android Studio Project Sharing-Android-Screen-for-Customer-Service-master/AndroidRTC-android-studio-sprint3
+* Run this application in Android Phone
+* Using Firefox browser to open the link:http://35.161.177.232:3000/ and click "Start" buttom to share screen on PC
+* Launch app on your android phone and register and log in and start to share screening by click "copy to the clipboard"
+* click "Refresh" buttom on browser and click call then you can start to share screen!
+
+
 ## ProjectRTC
 
 - Node.js server
