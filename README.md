@@ -30,8 +30,8 @@ It is designed to demonstrate WebRTC video calls between android devices and des
 
 * git clone https://github.com/YueSun233133/Sharing-Android-Screen-for-Customer-Service.git
 * open exist project in Android Studio Sharing-Android-Screen-for-Customer-Service/AndroidRTC-android-studio-sprint3/
-* change ../app/res/values/strings.xml "<string name="host">YOUR IP ADDRESS</string>"
-* change ../app/java/fr.pchab.androidrtc/utils/Constant, public static final String BASE_URL = "http://YOUR_IP_ADDRESS(10.0.2.2):8080/api/v1/" (10.0.2.2 for virtual device, YOUR_IP_ADDRESS for real Android Device)
+* change ../app/res/values/strings.xml "<string name="host">35.161.177.232</string>"
+* change ../app/java/fr.pchab.androidrtc/utils/Constant, public static final String BASE_URL = "http://35.161.177.232:8080/api/v1/" 
   
 
 ## How To
