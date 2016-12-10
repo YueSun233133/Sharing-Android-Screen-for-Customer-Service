@@ -116,8 +116,8 @@ public class LoginFragment extends Fragment {
             showSnackBarMessage("Enter Valid Details !");
         }
 
-        Intent intent = new Intent(getActivity(), RtcActivity.class);
-        startActivity(intent);
+//         Intent intent = new Intent(getActivity(), RtcActivity.class);
+//         startActivity(intent);
     }
 
     private void setError() {
@@ -146,8 +146,8 @@ public class LoginFragment extends Fragment {
         mEtEmail.setText(null);
         mEtPassword.setText(null);
 
-//        Intent intent = new Intent(getActivity(), RtcActivity.class);
-//        startActivity(intent);
+       Intent intent = new Intent(getActivity(), RtcActivity.class);
+       startActivity(intent);
 
 //        Intent intent = new Intent(getActivity(), ProfileActivity.class);
 //        startActivity(intent);
