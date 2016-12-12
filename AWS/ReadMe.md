@@ -26,6 +26,8 @@
 
 ## Change all default IP addresses in our app into EC2 public DNS to accomplish using server in AWS.
 
+## Open port 3000 and port 8080 in AWS security group as the picture in PortForwarding shows.
+
 ## How to
 
   Follow the steps in the first link (remember to install node.js with version after 4.0.0, otherwise npm cannot be successfully installed).
