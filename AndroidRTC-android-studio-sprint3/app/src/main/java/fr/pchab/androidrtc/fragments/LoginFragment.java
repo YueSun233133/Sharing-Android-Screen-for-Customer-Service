@@ -19,6 +19,8 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import fr.pchab.androidrtc.ProfileActivity;
 import fr.pchab.androidrtc.R;
 import fr.pchab.androidrtc.RtcActivity;
 import fr.pchab.androidrtc.model.Response;
@@ -116,8 +118,8 @@ public class LoginFragment extends Fragment {
             showSnackBarMessage("Enter Valid Details !");
         }
 
-        Intent intent = new Intent(getActivity(), RtcActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(getActivity(), RtcActivity.class);
+//        startActivity(intent);
     }
 
     private void setError() {
@@ -149,8 +151,8 @@ public class LoginFragment extends Fragment {
 //        Intent intent = new Intent(getActivity(), RtcActivity.class);
 //        startActivity(intent);
 
-//        Intent intent = new Intent(getActivity(), ProfileActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(getActivity(), ProfileActivity.class);
+        startActivity(intent);
 
     }
 

@@ -1,5 +1,6 @@
 package fr.pchab.androidrtc;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -12,14 +13,15 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import java.io.IOException;
+
+import fr.pchab.androidrtc.RtcActivity;
 import fr.pchab.androidrtc.fragments.ChangePasswordDialog;
 import fr.pchab.androidrtc.model.Response;
 import fr.pchab.androidrtc.model.User;
 import fr.pchab.androidrtc.network.NetworkUtil;
 import fr.pchab.androidrtc.utils.Constants;
-
-import java.io.IOException;
-
 import retrofit2.adapter.rxjava.HttpException;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -34,6 +36,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
     private TextView mTvDate;
     private Button mBtChangePassword;
     private Button mBtLogout;
+    private Button mBtAssistance;
 
     private ProgressBar mProgressbar;
 
@@ -60,8 +63,10 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
         mTvDate = (TextView) findViewById(R.id.tv_date);
         mBtChangePassword = (Button) findViewById(R.id.btn_change_password);
         mBtLogout = (Button) findViewById(R.id.btn_logout);
+        mBtAssistance = (Button) findViewById(R.id.btn_Assistance);
         mProgressbar = (ProgressBar) findViewById(R.id.progress);
 
+        mBtAssistance.setOnClickListener(view -> jmprtc());
         mBtChangePassword.setOnClickListener(view -> showDialog());
         mBtLogout.setOnClickListener(view -> logout());
     }
@@ -80,6 +85,11 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
         editor.putString(Constants.TOKEN,"");
         editor.apply();
         finish();
+    }
+
+    private void jmprtc() {
+        Intent intent = new Intent(this, RtcActivity.class);
+        startActivity(intent);
     }
 
     private void showDialog(){
@@ -129,7 +139,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
             }
         } else {
 
-            showSnackBarMessage("Network Error !");
+            showSnackBarMessage("Network Error2 !");
         }
     }
 
