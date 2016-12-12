@@ -56,23 +56,38 @@
     </android.support.v7.widget.CardView>
 
     <Button
-        android:id="@+id/btn_change_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/card"
-        android:layout_marginTop="@dimen/button_margin"
-        android:drawableRight="@drawable/ic_lock"
-        android:paddingLeft="@dimen/button_padding"
-        android:text="Change Password" />
-
-    <Button
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_change_password"
-        android:layout_marginTop="@dimen/button_margin"
         android:drawableRight="@drawable/ic_exit"
         android:paddingLeft="@dimen/button_padding"
-        android:text="Logout" />
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="49dp" />
+
+    <Button
+        android:id="@+id/btn_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_lock"
+        android:paddingLeft="@dimen/button_padding"
+        android:text="Change Password"
+        android:layout_above="@+id/btn_logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/btn_Assistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/button_padding"
+        android:text="Search for assistance"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/btn_change_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

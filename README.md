@@ -1,5 +1,16 @@
 Sharing Android Screen for Customer Service
 
+
+## Instruction(Please follow this instruction to implement this app)
+
+* git clone https://github.com/YueSun233133/Sharing-Android-Screen-for-Customer-Service.git
+* Open an existing Android Studio Project Sharing-Android-Screen-for-Customer-Service-master/AndroidRTC-android-studio-sprint3
+* Run this application in Android Phone
+* Using Firefox browser to open the link:http://35.161.177.232:3000/ and click "Start" buttom to share screen on PC
+* Launch app on your android phone and register and log in and start to share screening by click "copy to the clipboard"
+* click "Refresh" buttom on browser and click call then you can start to share screen!
+
+
 ## ProjectRTC
 
 - Node.js server
@@ -22,10 +33,17 @@ The server will run on port 3000.
 You can test it in the (Chrome or Firefox) browser at localhost:3000.
  
 ## AndroidRTC
+(https://chromium.googlesource.com/external/webrtc/+/master/webrtc/api/android/java/src/org/webrtc)
 
 An Android client for 
 
 It is designed to demonstrate WebRTC video calls between android devices and desktop browsers, but WebRtcClient could be used in other scenarios. 
+
+* git clone https://github.com/YueSun233133/Sharing-Android-Screen-for-Customer-Service.git
+* open exist project in Android Studio Sharing-Android-Screen-for-Customer-Service/AndroidRTC-android-studio-sprint3/
+* change ../app/res/values/strings.xml "<string name="host">35.161.177.232</string>"
+* change ../app/java/fr.pchab.androidrtc/utils/Constant, public static final String BASE_URL = "http://35.161.177.232:8080/api/v1/" 
+  
 
 ## How To
 
