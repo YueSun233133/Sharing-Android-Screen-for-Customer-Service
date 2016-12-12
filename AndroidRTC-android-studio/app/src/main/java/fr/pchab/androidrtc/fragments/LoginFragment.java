@@ -147,6 +147,8 @@ public class LoginFragment extends Fragment {
 
         Intent intent = new Intent(getActivity(), ProfileActivity.class);
         startActivity(intent);
+//        Intent intent = new Intent(getActivity(), RtcActivity.class);
+//        startActivity(intent);
 
     }
 
