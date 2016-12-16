@@ -50,10 +50,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
     private String mEmail;
 
     private CompositeSubscription mSubscriptions;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
+    
     private GoogleApiClient client;
 
     @Override
@@ -64,8 +61,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
         initViews();
         initSharedPreferences();
         loadProfile();
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
@@ -89,7 +85,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mToken = mSharedPreferences.getString(Constants.TOKEN, "");
         mEmail = mSharedPreferences.getString(Constants.EMAIL, "");
-//        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
     }
 
     private void logout() {
@@ -175,14 +171,10 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
         showSnackBarMessage("Password Changed Successfully !");
     }
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
+    
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
-                .setName("Profile Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
+                .setName("Profile Page") 
                 .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
                 .build();
         return new Action.Builder(Action.TYPE_VIEW)
@@ -195,8 +187,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
     public void onStart() {
         super.onStart();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        
         client.connect();
         AppIndex.AppIndexApi.start(client, getIndexApiAction());
     }
@@ -205,8 +196,7 @@ public class ProfileActivity extends AppCompatActivity implements ChangePassword
     public void onStop() {
         super.onStop();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }
