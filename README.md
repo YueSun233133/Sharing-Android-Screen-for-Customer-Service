@@ -1,5 +1,9 @@
 Sharing Android Screen for Customer Service
 
+## Description
+This is an android app that allows customers who need help with their mobile devices to connect directly with our service providers, the aim for this project is to establish peer to peer screen sharing, but so far we have only accomplished peer to peer camera sharing, and we are trying our best to figure out a way to change our sharing from camera to screen, but this is extremely hard and we have tried dozens of ways that doesn't work. Besides from this, our other functions just works fine, you can start the app, login or register, then you'll come to our profile page, which will display your username, your email information, you can change password and logout in this page, and also press the assistance button to initiate direct peer to peer video chat with pc.
+
+If you are doing a project review, the following instructions will guide you to use our app, for any questions, please contact Wenpeng Wang, +1-(857)8005627.
 
 ## Instruction(Please follow this instruction to implement this app)
 
